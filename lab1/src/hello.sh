@@ -1,3 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "Hello, world!"
+dt=$(date '+%d/%m/%Y %H:%M:%S');
+echo "$dt"
+pwd
+printenv PATH

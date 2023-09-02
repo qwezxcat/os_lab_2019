@@ -1,0 +1,1 @@
+#!/bin/bashchmod +x ./myscript
