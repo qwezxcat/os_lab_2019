@@ -1,1 +1,0 @@
-$ od -A n -t d -N 1 /dev/urandom
