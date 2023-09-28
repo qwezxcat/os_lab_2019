@@ -1,0 +1,126 @@
+    1  pw
+    2  pwd
+    3  cd lab2
+    4  cd src
+    5  pwd
+    6  history
+    7  cc swap.c
+    8  cc main.c
+    9  chmod u+rwx main.c
+   10  pwd
+   11  cd swap
+   12  chmod u+rwx main.c
+   13  cc main.c
+   14  vim -b swap.c
+   15  chmod u+rwx main.c
+   16  chmod u+rwx swap.c
+   17  chmod u+rwx swap.h
+   18  gcc main.c
+   19  ./main.c
+   20  gcc main.c swap.c swap.h 
+   21  vim -b swap.c
+   22  gcc main.c swap.c swap.h 
+   23  gcc swap.h.gch
+   24  gcc main.c swap.c swap.h 
+   25  gcc main.c swap.c swap.h -o "hello_world"
+   26  ./hello_world
+   27  cd ..
+   28  cd revert_string
+   29  pwd
+   30  chmod u+rwx main.c
+   31  chmod u+rwx revert_string.c
+   32  vim -b revert_string.c
+   33  gcc main.c revert_string.c revert_string.h -o "hello_world"
+   34  vim -b revert_string.c
+   35  gcc main.c revert_string.c revert_string.h -o "hello_world"
+   36  gcc main.c revert_string.c -o "hello_world"
+   37  gcc main.c revert_string.c -o hello_world
+   38  vim -b revert_string.c
+   39  gcc main.c revert_string.c -o hello_world
+   40  ./main.c fdsdfs
+   41  gcc main.c revert_string.c -o hello_world
+   42  ./hello_world sdasd
+   43  ./hello_world 
+   44  ./hello_world йукфвфцв
+   45  ./hello_world asdasdasg
+   46  зцв
+   47  pwd
+   48  gcc -c main.c -o main.o
+   49  gcc -c revert_string.c -o revert_string.o
+   50  ar rcs revert_string.a main.o revert_string.o
+   51  gcc main.o -L -revert_string -o
+   52  gcc main.o -L -revert_string -o src
+   53  gcc main.o -Lsrc/revert_string -lrevert_string -o src
+   54  gcc main.o -L. -lrevert_string -o src
+   55  gcc main.o -L. -lrevert_string.a -o src
+   56  mv revert_string.a static_revert_string.a
+   57  gcc main.o -L. -lstatic_revert_string -o src
+   58  gcc main.o -L. -l:static_revert_string -o src
+   59  gcc main.o -L. -l:static_revert_string.a -o src
+   60  gcc main.o -L. -l:static_revert_string.a -o staticcally-linked
+   61  ./staticcally-linked
+   62  ./staticcally-linked asdfa
+   63  history
+   64  gcc -c -fPIC main.c -o main.o
+   65  gcc -c -fPIC revert_string.c -o revert_string.o
+   66  gcc -shared -odynamic_revert_string.so main.o revert_string.o
+   67  gcc main.o -L. -ldynamic_revert_string.so -o dynamically-linked
+   68  gcc main.o -L. -l:dynamic_revert_string.a -o dynamically-linked
+   69  gcc main.o -L. -l:dynamic_revert_string.so -o dynamically-linked
+   70  ./dynamically-linked
+   71  ./statically-linked assdas
+   72  ./staticcally-linked sfglpsgl
+   73  ./dynamically-linked
+   74  ./statically-linked assdas
+   75  ./staticcally-linked assdas
+   76  gcc -c -fPIC main.c -o main.o
+   77  gcc -c -fPIC revert_string.c -o revert_string.o
+   78  gcc -shared -odynamic_revert_string.so main.o revert_string.o
+   79  gcc main.o -L. -l:dynamic_revert_string.so -o dynamically-linked
+   80  ./dynamically-linked efafaa
+   81  gcc -shared main.o revert_string.o -o dynamic_revert_string.so
+   82  gcc main.o -L. -l:dynamic_revert_string.so -o dynamically-linked
+   83  ./dynamically-linked sdfsddf
+   84  LD_LIBRARY_PATH=/project/home/umom/workspace/lab2/src/revert_string/dynamically-linked
+   85  ./dynamically-linked sdfsddf
+   86  Export ld_path
+   87  export ld_path
+   88  ./dynamically-linked sdfsddf
+   89  export LD_LIBRARY_PATH
+   90  ./dynamically-linked sdfsddf
+   91  history
+   92  ./dynamically-linked sdfsddf
+   93  ./staticcally-linked wewef
+   94  LD_LIBRARY_PATH=/project/home/umom/workspace/lab2/src/revert_string/dynamically-linked
+   95  history
+   96  gcc -c main.c -o main.o
+   97  gcc -shared revert_string.o -o librevert_string.so
+   98  gcc main.o -L. -lrevert_string -o hui
+   99  LD_LIBRARY_PATH=$(pwd)
+  100  export LD_LIBRARY_PATH
+  101  ./hui asd
+  102  mv hui dynamically-linked
+  103  mv librevert_string 
+  104  mv librevert_string dynamic_revert_string
+  105  mv librevert_string.so dynamic_revert_string.so
+  106  ./dynamically-linked asd
+  107  gcc -shared revert_string.o -o librevert_string.so
+  108  run-help gcc
+  109  gcc main.o -L. -lrevert_string -o dynamically-linked
+  110  LD_LIBRARY_PATH=$(pwd)
+  111  export LD_LIBRARY_PATH
+  112  ./dynamically-linked asd
+  113  pwd
+  114  cd ..
+  115  cd swap
+  116  git add swap.c hello_world
+  117  git status
+  118  git add revert_string.c
+  119  git commit -m "1"
+  120  git push
+  121  cd ..
+  122  cd revert_string
+  123  git add dynamically-linked hello_world librevert_string.so main.o revert_string.c revert_string.o static_revert_string.a staticcally-linked
+  124  git commit -m "2"
+  125  git push
+  126  history
